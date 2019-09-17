@@ -18,7 +18,7 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="regist.jsp">免费注册</a>] </li>
 					<li class="line">|</li>
 					<li>我的订单</li>
 					<li class="line">|</li>
@@ -48,19 +48,19 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="" method="post">
+				<form action="index.html" method="post">
 					<ul>
 						<li>
-							<label for="">用户名：</label>
-							<input type="text" class="txt" name="username" />
+							<label for="username">用户名：</label>
+							<input type="text" class="txt" name="username" value="${user.username}"/>
 						</li>
 						<li>
-							<label for="">密码：</label>
-							<input type="password" class="txt" name="password" />
+							<label for="password">密码：</label>
+							<input type="password" class="txt" name="password" value="${user.password}"/>
 							<a href="">忘记密码?</a>
 						</li>
 						<li class="checkcode">
-							<label for="">验证码：</label>
+							<label for="checkcode">验证码：</label>
 							<input type="text"  name="checkcode" />
 							<img src="images/checkcode1.jpg" alt="" />
 							<span>看不清？<a href="">换一张</a></span>
@@ -79,13 +79,13 @@
 				<div class="coagent mt15">
 					<dl>
 						<dt>使用合作网站登录商城：</dt>
-						<dd class="qq"><a href=""><span></span>QQ</a></dd>
-						<dd class="weibo"><a href=""><span></span>新浪微博</a></dd>
-						<dd class="yi"><a href=""><span></span>网易</a></dd>
-						<dd class="renren"><a href=""><span></span>人人</a></dd>
-						<dd class="qihu"><a href=""><span></span>奇虎360</a></dd>
-						<dd class=""><a href=""><span></span>百度</a></dd>
-						<dd class="douban"><a href=""><span></span>豆瓣</a></dd>
+						<dd class="qq"><a href="https://www.qq.com/"><span></span>QQ</a></dd>
+						<dd class="weibo"><a href="https://weibo.com/?sudaref=www.baidu.com&display=0&retcode=6102"><span></span>新浪微博</a></dd>
+						<dd class="yi"><a href="https://www.163.com/"><span></span>网易</a></dd>
+						<dd class="renren"><a href="http://www.renren.com/"><span></span>人人</a></dd>
+						<dd class="qihu"><a href="https://www.360.cn/"><span></span>奇虎360</a></dd>
+						<dd class=""><a href="https://www.baidu.com/"><span></span>百度</a></dd>
+						<dd class="douban"><a href="https://www.douban.com/"><span></span>豆瓣</a></dd>
 					</dl>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 				<h3>还不是商城用户</h3>
 				<p>现在免费注册成为商城用户，便能立刻享受便宜又放心的购物乐趣，心动不如行动，赶紧加入吧!</p>
 
-				<a href="regist.html" class="reg_btn">免费注册 >></a>
+				<a href="regist.jsp" class="reg_btn">免费注册 >></a>
 			</div>
 
 		</div>

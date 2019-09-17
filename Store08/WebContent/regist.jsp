@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -48,25 +50,25 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="" method="post">
+				<form action="${pageContext.request.contextPath }/user/regist.action" method="post">
 					<ul>
 						<li>
-							<label for="">用户名：</label>
+							<label for="username">用户名：</label>
 							<input type="text" class="txt" name="username" />
 							<p>3-20位字符，可由中文、字母、数字和下划线组成</p>
 						</li>
 						<li>
-							<label for="">密码：</label>
+							<label for="password">密码：</label>
 							<input type="password" class="txt" name="password" />
 							<p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
 						</li>
 						<li>
-							<label for="">确认密码：</label>
+							<label for="password">确认密码：</label>
 							<input type="password" class="txt" name="password" />
 							<p> <span>请再次输入密码</p>
 						</li>
 						<li class="checkcode">
-							<label for="">验证码：</label>
+							<label for="checkcode">验证码：</label>
 							<input type="text"  name="checkcode" />
 							<img src="images/checkcode1.jpg" alt="" />
 							<span>看不清？<a href="">换一张</a></span>
