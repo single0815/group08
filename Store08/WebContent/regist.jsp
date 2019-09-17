@@ -20,9 +20,9 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="regist.html">免费注册</a>] </li>
 					<li class="line">|</li>
-					<li>我的订单</li>
+					<li><a href="order.html">我的订单</a></li>
 					<li class="line">|</li>
 					<li>客户服务</li>
 
@@ -50,7 +50,11 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
+<<<<<<< HEAD:Store08/WebContent/regist.jsp
 				<form action="${pageContext.request.contextPath }/user/regist.action" method="post">
+=======
+				<form action="login.html" method="post">
+>>>>>>> 4b8a25151489ccc63af9983972681382372a63e9:Store08/WebContent/regist.html
 					<ul>
 						<li>
 							<label for="username">用户名：</label>
